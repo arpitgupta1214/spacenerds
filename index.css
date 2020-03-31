@@ -358,9 +358,9 @@ p {
         position: absolute;
         box-sizing: border-box;
         padding: 5px;
-        top: 15px;
+        top: 20px;
         left: 15px;
-        width: 50px;
+        width: 45px;
         height: 50px;
         transition: transform 0.5s;
     }
@@ -387,7 +387,7 @@ p {
         background-color: white;
     }
     .navbar-mob > a > img{
-        padding-left: 20px;
+        padding-left: 8%;
     }
     .navbar-mob a{
         border: none;
