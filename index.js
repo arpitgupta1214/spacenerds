@@ -19,6 +19,7 @@ function sizesetup() {
 var navlinks = document.querySelectorAll(".navbar-mob ul li")
 navlinks.forEach(element => {
     element.addEventListener("touchend", () => document.querySelector(".navbar-mob input").checked = false)
+    element.addEventListener("click", () => document.querySelector(".navbar-mob input").checked = false)
 });
 
 sizesetup()
