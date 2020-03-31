@@ -41,6 +41,7 @@ p {
     letter-spacing: 0.05em;
     line-height: 1.4em;
     color: var(--text-main);
+    font-weight:500;
 }
 
 .clr {
