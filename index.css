@@ -136,6 +136,7 @@ p {
     padding: 100px 5% 100px 10%;
     overflow: hidden;
 }
+
 .projecttext{
     width:50%;
     float:left;
@@ -420,7 +421,7 @@ p {
         font-size: 40px;
         font-family: Avenir;
         font-weight: 700;
-        background-color: var(--primary-color)9c;
+        background-color: #4141aaab;
         transform: translate(-100%,0);
         transition: transform 0.5s;
     }
