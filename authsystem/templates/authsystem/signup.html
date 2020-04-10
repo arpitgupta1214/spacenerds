@@ -1,0 +1,36 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'authsystem/css/signup.css'%}">
+    <title>Signup</title>
+</head>
+
+<body>
+    <h1>Signup</h1>
+    <div class="form">
+        <form>
+            {%csrf_token%}
+            <div>
+                <input type="text" name="fname" placeholder="First Name" autocomplete="given-name">
+                <input type="text" name="lname" placeholder="Last Name" autocomplete="family-name">
+            </div>
+            <input type="text" name="email" placeholder="Email" autocomplete="email">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password" autocomplete="new-password">
+            <button type="button" name="submit">Signup</button>
+        </form>
+    </div>
+    <div class="logmsg">
+        <p>
+
+        </p>
+    </div>
+    <script src="{%static 'authsystem/js/signup.js'%}"></script>
+
+</body>
+
+</html>

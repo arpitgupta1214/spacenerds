@@ -1,0 +1,32 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'authsystem/css/login.css'%}">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <div class="form">
+        <form>
+            {%csrf_token%}
+            <input type="text" name="username" placeholder="Username" autocomplete="username">
+            <input type="password" name="password" placeholder="Password" autocomplete="current-password">
+            <button type="button" name="submit">Login</button>
+            <a href="{%url 'signup'%}"><button type="button" name="signup">Signup</button></a>
+        </form>
+    </div>
+    <div class="logmsg">
+        <p>
+
+        </p>
+    </div>
+    <script src="{%static 'authsystem/js/login.js'%}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'authsystem/css/profile.css'%}">
+    <title>Profile | {{fname}}</title>
+</head>
+
+<body>
+    <h1>Profile</h1>
+    <div class="details">
+        <div>First Name: {{fname}}</div>
+        <div>Last Name : {{lname}}</div>
+        <div>Username : {{username}}</div>
+        <div>email : {{email}}</div>
+    </div>
+    {%csrf_token%}
+    <button type="button">Logout</button>
+</body>
+<script src="{%static 'authsystem/js/profile.js'%}"></script>
+
+</html>
